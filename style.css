@@ -1,0 +1,150 @@
+:root{
+    --cf: rgb(46, 41, 41);
+    --ch: rgb(186, 238, 170);
+    --cp: #fff;
+
+}
+body{ 
+    margin:0px 0px 0px 0px;
+    padding: 0;
+    height:100vh;
+    width: 100%;
+    background-color: var(--ch)
+    
+  
+}
+
+
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--cf);
+    position: relative;
+    margin-top: 0%;
+    
+       
+}
+.menu ul li{
+    display: inline;
+    position:relative;
+    
+    
+}
+.menu ul li a{
+    color: var(--cp);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    
+}
+
+.menu ul li a:hover{
+    background-color: var(--ch);   
+   
+}
+.menu ul li:hover ul{
+    display: block;
+
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 150px;
+   }
+.menu ul ul li a{
+    display: block;
+}
+.content{
+    height: 170px;
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden; 
+    position: static;
+    margin: 1% 5% ;
+}
+.navigation{
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50% );
+    display: inline-flex;
+    margin: auto ;
+    margin-top: -8px;
+}
+.bar{
+    width: 70px;
+    height: 15px;
+    border:  solid rgba(226, 231, 215, 0.24);
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.bar:hover{
+    background-color: rgba(240, 240, 227, 0.158);
+}
+input{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+        width: 20%;
+        transition: .6s;
+        }
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#slide1:checked ~.s1{
+    margin-left: 0;
+}
+#slide2:checked ~.s1{
+    margin-left: -20%;
+}
+#slide3:checked ~.s1{
+    margin-left: -40%;
+}
+#slide4:checked ~.s1{
+    margin-left: -60%;
+}
+#slide5:checked ~.s1{
+    margin-left: -80%;
+}
+footer{
+    background-color: black;
+    color: #fff;   
+    text-align: center; 
+        
+}
+.sec{
+    width: 50%;
+    margin: auto;
+}
+.se1{
+    display: flex;
+    width: 50%; 
+ 
+    margin: auto;
+
+}
+.se1>.c1{
+ 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ background-color: white;
+ padding:1rem 1.5rem;
+ border-radius: 8px;
+ max-width: 256px;
+ margin-left: 32px;
+}
+.s1 .c1 .t1{
+    width: 1500px;
+}
