@@ -153,7 +153,7 @@ footer{
 .s1 .c1 .t1{
     width: 1500px;
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 723px){
     .se1 {
         flex-direction: column;
         
