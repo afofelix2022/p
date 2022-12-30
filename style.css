@@ -4,9 +4,13 @@
     --cp: #fff;
 
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{ 
     margin:0px 0px 0px 0px;
-    padding: 0;
     height:100vh;
     width: 100%;
     background-color: var(--ch)
@@ -143,8 +147,15 @@ footer{
  padding:1rem 1.5rem;
  border-radius: 8px;
  max-width: 256px;
- margin-left: 32px;
+ 
+ margin: 32px 32px 32px 0;
 }
 .s1 .c1 .t1{
     width: 1500px;
+}
+@media screen and (max-width: 720px){
+    .se1 {
+        flex-direction: column;
+        
+    }
 }
